@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Steembin</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <% if flash.any? %>
+  <div id="flash" class="flash-modern">
+    <% flash.each do |type, msg| %>
+      <div id="<%= type %>">
+        <span><%= msg %></span>
+        <span class="flash-closer">×</span>
+      </div>
+    <% end %>
+  </div>
+  <% end %>
+  
+  <body>
+    <%= yield %>
+  </body>
+</html>

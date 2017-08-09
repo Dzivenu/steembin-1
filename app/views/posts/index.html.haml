@@ -1,0 +1,5 @@
+%p= will_paginate @posts
+
+= render partial: 'post', collection: @posts, as: :post || 'No posts to be displayed.'
+
+%p= will_paginate @posts

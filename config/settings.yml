@@ -1,0 +1,6 @@
+:production:
+  :account_name: steembin
+:development:
+  :account_name: inertia
+:test:
+  :account_name: steembin
